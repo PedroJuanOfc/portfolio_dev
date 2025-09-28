@@ -1,0 +1,54 @@
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--primary-text-color);
+}
+
+.hero h3 {
+  color: var(--primary-green-dark);
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.hero img {
+  height: 400px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 0;
+}
+
+.icons img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation h2:last-of-type {
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.presentation h2 + .icons {
+  margin-top: 0;
+}
+
+.image img{
+  border-radius: 50%;
+}

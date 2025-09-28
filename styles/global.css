@@ -1,12 +1,44 @@
+:root {
+  /* Cores principais */
+  --primary-green: #00bf63;
+  --primary-green-light: #4ddf97;
+  --primary-green-dark: #00994f;
+
+  /* Fundo */
+  --bg-color: #1f1f1f;
+  --bg-color-light: #2b2b2b;
+  --bg-color-dark: #141414;
+
+  /* Texto */
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #cfcfcf;
+  --muted-text-color: #8a8a8a;
+
+  /* Cor secundária (contraste com o verde) */
+  --secondary-purple: #8a2be2;
+  --secondary-purple-light: #b26bf3;
+  --secondary-purple-dark: #5a189a;
+
+  /* Tons neutros para bordas e elementos */
+  --border-color: #333333;
+  --card-bg: #2a2a2a;
+  --hover-color: #3a3a3a;
+
+  /* Alertas e feedback */
+  --success-color: #00c851;
+  --warning-color: #ffbb33;
+  --error-color: #ff4444;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;;
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--bg-color);
   font-family: system-ui, sans-serif;
 }
 
