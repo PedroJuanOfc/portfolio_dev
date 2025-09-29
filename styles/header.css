@@ -1,3 +1,11 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .hero .container {
   display: flex;
   align-items: center;
@@ -51,10 +59,10 @@
   line-height: 1.1;
 }
 
-.presentation h2 + .icons {
+.presentation h2+.icons {
   margin-top: 0;
 }
 
-.image img{
+.image img {
   border-radius: 50%;
 }
