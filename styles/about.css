@@ -1,9 +1,7 @@
-/* Seção Sobre — alinhada ao tema existente (dark) */
 .about {
   height: 100vh;
   display: flex;
   align-items: center;
-  /* Container interno já centraliza; aqui só garantimos o fundo do tema */
   background: var(--bg-color);
   color: var(--primary-text-color);
 }
@@ -13,7 +11,6 @@
   padding: 0 10%;
 }
 
-/* Grid principal */
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -43,13 +40,20 @@
 }
 
 .about-text p {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Biotif', sans-serif;
   font-weight: 400;
-  font-size: 1.05rem;
+  font-size: 16px;
   line-height: 1.7;
-  color: var(--secondary-text-color);
+  color: #8F9BA8;
   margin-bottom: 12px;
 }
+
+.about-text .highlight {
+  font-family: 'Biotif', sans-serif;
+  font-weight: 400;
+  color: #F2F2F2;
+}
+
 
 .quick-facts {
   display: grid;
@@ -141,7 +145,6 @@
   }
 }
 
-/* Ajuste fino para telas muito baixas: evita corte de conteúdo */
 @media (max-height: 720px) {
   .about {
     min-height: 100vh;
