@@ -1,129 +1,24 @@
-/* Light (300) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-/* Regular (400) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-RegularItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* Medium (500) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-/* SemiBold (600) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotiffamily/Biotif-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
-
-/* Bold (700) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* ExtraBold (800) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-ExtraBoldItalic.ttf') format('truetype');
-  font-weight: 800;
-  font-style: italic;
-}
-
-/* Black (900) */
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biotif';
-  src: url('../assets/font/biotif/Biotif-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-
-
 :root {
-  /* Cores principais */
   --primary-green: #00bf63;
   --primary-green-light: #4ddf97;
   --primary-green-dark: #00994f;
 
-  /* Fundo */
   --bg-color: #1f1f1f;
   --bg-color-light: #2b2b2b;
   --bg-color-dark: #141414;
 
-  /* Texto */
   --primary-text-color: #ffffff;
   --secondary-text-color: #cfcfcf;
   --muted-text-color: #8a8a8a;
 
-  /* Cor secundária (contraste com o verde) */
   --secondary-purple: #8a2be2;
   --secondary-purple-light: #b26bf3;
   --secondary-purple-dark: #5a189a;
 
-  /* Tons neutros para bordas e elementos */
   --border-color: #333333;
   --card-bg: #2a2a2a;
   --hover-color: #3a3a3a;
 
-  /* Alertas e feedback */
   --success-color: #00c851;
   --warning-color: #ffbb33;
   --error-color: #ff4444;
@@ -133,12 +28,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   background-color: var(--bg-color);
-  font-family: system-ui, sans-serif;
+  color: var(--primary-text-color);
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
 }
 
 .container {

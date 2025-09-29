@@ -27,7 +27,7 @@
   object-fit: cover;
   border-radius: 20px;
   display: block;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   border: 1px solid var(--border-color);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .about-text p {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -50,8 +50,8 @@
 }
 
 .about-text .highlight {
-  font-family: 'Biotif', sans-serif;
-  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
   color: #F2F2F2;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .about .btn {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -104,7 +104,7 @@
   color: #0b0b0b;
   border-radius: 999px;
   border: 1px solid #00a457;
-  box-shadow: 0 6px 16px -4px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.4);
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 
@@ -122,7 +122,6 @@
 .about .btn-outline:hover {
   background: var(--hover-color);
 }
-
 
 @media (max-width: 1100px) {
   .about {

@@ -32,13 +32,13 @@
   border: 1px solid var(--border-color);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
 .project-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(0,0,0,.28);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .28);
   border-color: #2f2f2f;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .card-desc {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -97,7 +97,7 @@
 }
 
 .btn.btn-sm {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   padding: 8px 12px;
   font-size: 0.95rem;
@@ -107,18 +107,24 @@
   color: #0b0b0b;
   border-radius: 999px;
   border: 1px solid #00a457;
-  box-shadow: 0 6px 16px -4px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.4);
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 
-.btn.btn-sm:hover { filter: brightness(1.03); transform: translateY(-1px); }
+.btn.btn-sm:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+}
 
 .btn.btn-outline {
   background: transparent;
   color: var(--primary-text-color);
   border: 1px solid var(--border-color);
 }
-.btn.btn-outline:hover { background: var(--hover-color); }
+
+.btn.btn-outline:hover {
+  background: var(--hover-color);
+}
 
 .card-cover {
   position: absolute;
@@ -126,11 +132,20 @@
   border-radius: 16px;
   z-index: 1;
 }
-.card-actions { position: relative; z-index: 2; }
+
+.card-actions {
+  position: relative;
+  z-index: 2;
+}
 
 @media (max-width: 1100px) {
-  .projects .container { padding: 0 6%; }
-  .projects-grid { grid-template-columns: 1fr; }
+  .projects .container {
+    padding: 0 6%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card.is-soon {
@@ -161,4 +176,6 @@
   display: none;
 }
 
-.project-card.is-soon { cursor: default; }
+.project-card.is-soon {
+  cursor: default;
+}

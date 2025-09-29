@@ -29,7 +29,7 @@
 }
 
 .contact-info .lead {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #8F9BA8;
@@ -47,7 +47,7 @@
 .contact-list .label {
   display: inline-block;
   min-width: 64px;
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--muted-text-color);
@@ -55,7 +55,7 @@
 }
 
 .contact-list a {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #ECEDEE;
@@ -72,7 +72,7 @@
 .btn-copy {
   margin-left: 12px;
   padding: 6px 10px;
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 999px;
@@ -82,7 +82,11 @@
   cursor: pointer;
   transition: transform .15s ease, filter .15s ease;
 }
-.btn-copy:hover { filter: brightness(1.04); transform: translateY(-1px); }
+
+.btn-copy:hover {
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
 
 .meta {
   list-style: none;
@@ -91,14 +95,16 @@
   display: grid;
   gap: 8px;
 }
+
 .meta li {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #8F9BA8;
 }
+
 .meta li strong {
-  font-weight: 450;
+  font-weight: 500;
   color: #F2F2F2;
 }
 
@@ -107,7 +113,7 @@
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
 }
 
 .form-row {
@@ -122,7 +128,7 @@
 }
 
 .form-field label {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--muted-text-color);
@@ -136,7 +142,7 @@
   border: 1px solid var(--border-color);
   background: var(--bg-color-light);
   color: var(--primary-text-color);
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   outline: none;
   transition: border-color .15s ease, box-shadow .15s ease;
@@ -150,10 +156,12 @@
 .form-field input:focus,
 .form-field textarea:focus {
   border-color: var(--primary-green);
-  box-shadow: 0 0 0 3px rgba(0,191,99,0.15);
+  box-shadow: 0 0 0 3px rgba(0, 191, 99, 0.15);
 }
 
-.hp { display: none; }
+.hp {
+  display: none;
+}
 
 .actions {
   margin-top: 12px;
@@ -162,7 +170,7 @@
 }
 
 .contact .btn {
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -174,21 +182,28 @@
   color: #0b0b0b;
   border-radius: 999px;
   border: 1px solid #00a457;
-  box-shadow: 0 6px 16px -4px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.4);
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
-.contact .btn:hover { filter: brightness(1.03); transform: translateY(-1px); }
+
+.contact .btn:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+}
 
 .contact .btn-outline {
   background: transparent;
   color: var(--primary-text-color);
   border: 1px solid var(--border-color);
 }
-.contact .btn-outline:hover { background: var(--hover-color); }
+
+.contact .btn-outline:hover {
+  background: var(--hover-color);
+}
 
 .form-status {
   margin-top: 10px;
-  font-family: 'Biotif', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   color: #8F9BA8;
 }
@@ -198,6 +213,12 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
-  .contact .container { padding: 0 6%; }
-  .form-row { grid-template-columns: 1fr; }
+
+  .contact .container {
+    padding: 0 6%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
