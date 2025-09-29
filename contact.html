@@ -16,12 +16,18 @@
 <body>
   <nav class="navbar">
     <div class="container">
-      <img src="assets/logo.png" alt="Logo" />
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Logo" />
+      </a>
 
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul id="primary-navigation" class="nav-links">
         <li><a href="index.html">INÍCIO</a></li>
         <li><a href="about.html">SOBRE</a></li>
-        <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="projects.html">PROJETOS</a></li>
         <li><a href="contact.html">CONTATO</a></li>
       </ul>
 
@@ -103,6 +109,7 @@
   </main>
   <script src="scripts/active-link.js"></script>
   <script src="scripts/contact.js"></script>
+  <script src="scripts/nav.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,11 @@
 .about {
-  height: 100vh;
-  display: flex;
-  align-items: center;
   background: var(--bg-color);
   color: var(--primary-text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 96px 0 40px;
+  scroll-margin-top: 96px;
 }
 
 .about .container {
@@ -29,7 +31,6 @@
   border: 1px solid var(--border-color);
 }
 
-
 .about-text h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -53,7 +54,6 @@
   font-weight: 400;
   color: #F2F2F2;
 }
-
 
 .quick-facts {
   display: grid;
@@ -123,23 +123,33 @@
   background: var(--hover-color);
 }
 
+
 @media (max-width: 1100px) {
+  .about {
+    padding-top: 112px;
+    scroll-margin-top: 112px;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
     gap: 28px;
     text-align: center;
   }
+
   .about-image {
     order: -1;
   }
+
   .about-image img {
     margin: 0 auto;
   }
+
   .quick-facts {
     grid-template-columns: 1fr;
     padding-left: 0;
     list-style-position: inside;
   }
+
   .about .container {
     padding: 0 6%;
   }
@@ -148,7 +158,6 @@
 @media (max-height: 720px) {
   .about {
     min-height: 100vh;
-    height: auto;
-    padding: 48px 0;
+    padding-bottom: 48px;
   }
 }
