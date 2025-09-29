@@ -2,6 +2,9 @@
 
 Site pessoal para apresentar meu perfil, projetos e formas de contato. Foi pensado para ser leve, responsivo e direto.
 
+![Screenshot do projeto](assets/projects/project1.png)
+
+
 ## Tecnologias
 - **HTML** para a marcação
 - **CSS** modular com variáveis (`:root`) e layout responsivo
