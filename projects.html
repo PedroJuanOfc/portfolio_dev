@@ -1,37 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedro Juan Dev</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Juan Dev</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo" />
+
+      <ul class="nav-links">
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="about.html">SOBRE</a></li>
+        <li><a href="projects.html">PROJETOS</a></li>
+        <li><a href="contact.html ">CONTATO</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn-contact">Entre em contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="projects" id="projetos">
       <div class="container">
-        <img src="assets/logo.png" alt="Logo" />
+        <h1 class="projects-title">Projetos</h1>
 
-        <ul class="nav-links">
-          <li><a href="index.html">INÍCIO</a></li>
-          <li><a href="about.html">SOBRE</a></li>
-          <li><a href="#projetos">PROJETOS</a></li>
-          <li><a href="contact.html ">CONTATO</a></li>
-        </ul>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card" data-live="https://pedrojuan.dev"
+            data-repo="https://github.com/PedroJuanOfc/portfolio_dev" data-video="">
+            <div class="card-media">
+              <img src="assets/projects/project1.png" alt="Screenshot do Projeto 1">
+            </div>
 
-        <a href="contact.html" class="btn-contact">Entre em contato</a>
+            <div class="card-content">
+              <h3 class="card-title">Meu portfólio</h3>
+              <p class="card-desc">
+                Aplicação web focada em interface clara e performance. Integração simples e deploy estático.
+              </p>
+
+              <ul class="stack-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="card-actions">
+                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
+                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
+                <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
+              </div>
+            </div>
+
+            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card is-soon" data-live="" data-repo="" data-video="">
+            <div class="card-media">
+              <img src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
+                alt="Prévia do projeto em breve">
+              <span class="soon-badge">Em breve</span>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Em breve</h3>
+              <p class="card-desc">
+                Projeto em desenvolvimento. Em breve estarão disponíveis demonstração e repositório com todos os
+                detalhes.
+              </p>
+
+              <!-- <ul class="stack-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> -->
+
+              <div class="card-actions">
+                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
+                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a>
+              </div>
+            </div>
+
+            <!-- a capa fica desativada quando não há link primário -->
+            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
+          </article>
+
+
+          <!-- Projeto 3 -->
+          <article class="project-card is-soon" data-live="" data-repo="" data-video="">
+            <div class="card-media">
+              <img src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
+                alt="Prévia do projeto em breve">
+              <span class="soon-badge">Em breve</span>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Em breve</h3>
+              <p class="card-desc">
+                Projeto em desenvolvimento. Em breve estarão disponíveis demonstração e repositório com todos os
+                detalhes.
+              </p>
+
+              <!-- <ul class="stack-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> -->
+
+              <div class="card-actions">
+                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
+                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a>
+              </div>
+            </div>
+
+            <!-- a capa fica desativada quando não há link primário -->
+            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
+          </article>
+
+          <!-- Projeto 4 -->
+          <article class="project-card is-soon" data-live="" data-repo="" data-video="">
+            <div class="card-media">
+              <img src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
+                alt="Prévia do projeto em breve">
+              <span class="soon-badge">Em breve</span>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Em breve</h3>
+              <p class="card-desc">
+                Projeto em desenvolvimento. Em breve estarão disponíveis demonstração e repositório com todos os
+                detalhes.
+              </p>
+
+              <!-- <ul class="stack-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> -->
+
+              <div class="card-actions">
+                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
+                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a>
+              </div>
+            </div>
+
+            <!-- a capa fica desativada quando não há link primário -->
+            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
+          </article>
+        </div>
       </div>
-    </nav>
+    </section>
 
-    
-    <script src="scripts/active-link.js"></script>
-  </body>
+  </main>
+
+  <script src="scripts/active-link.js"></script>
+  <script src="scripts/projects.js"></script>
+</body>
+
 </html>
-
-
-
