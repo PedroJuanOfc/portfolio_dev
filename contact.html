@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Juan Dev</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo" />
+
+      <ul class="nav-links">
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="about.html">SOBRE</a></li>
+        <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="contact.html">CONTATO</a></li>
+      </ul>
+
+      <a href="#contato" class="btn-contact">Entre em contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <aside class="contact-info">
+            <h1>Contato</h1>
+            <p class="lead">
+              Prefere falar por e-mail ou redes? Mande uma mensagem pelo formulário ou use um dos canais abaixo.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="label">E-mail</span>
+                <a id="contact-email" href="mailto:pedrosaraivaofc@gmail.com" data-email="pedrosaraivaofc@gmail.com">pedrosaraivaofc@gmail.com</a>
+                <button class="btn-copy" type="button" id="copy-email">Copiar</button>
+              </li>
+              <li>
+                <span class="label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/pedro-juan-ferreira-saraiva/" target="_blank" rel="noopener">https://www.linkedin.com/in/pedro-juan-ferreira-saraiva/</a>
+              </li>
+              <li>
+                <span class="label">GitHub</span>
+                <a href="https://github.com/PedroJuanOfc" target="_blank" rel="noopener">https://github.com/PedroJuanOfc</a>
+              </li>
+            </ul>
+
+            <ul class="meta">
+              <li><strong>Status:</strong> Aberto a projetos e oportunidades</li>
+              <li><strong>Local:</strong> Brasília, Brasil</li>
+            </ul>
+          </aside>
+
+          <div class="contact-form">
+            <form id="contact-form" autocomplete="on">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" placeholder="Seu nome" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required />
+              </div>
+
+              <div class="form-field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+              </div>
+
+              <div class="form-field hp">
+                <labesl for="company">Empresa</label>
+                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="actions">
+                <button type="submit" class="btn">Enviar</button>
+                <a class="btn btn-outline" href="mailto:seuemail@exemplo.com">Abrir no e-mail</a>
+              </div>
+
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="scripts/active-link.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+
+</html>
