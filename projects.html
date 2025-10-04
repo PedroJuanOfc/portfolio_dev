@@ -1,185 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Pedro Juan Dev</title>
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/favicon/favicon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/favicon/favicon32.png"
+      />
+      <link rel="stylesheet" href="styles/index.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
 
-<!DOCTYPE html>
-<html lang="pt-br">
+    <body>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="brand">
+            <img src="assets/logo.png" alt="Logo" />
+          </a>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pedro Juan Dev</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon32.png">
-  <link rel="stylesheet" href="styles/index.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-</head>
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span class="bar"></span><span class="bar"></span
+            ><span class="bar"></span>
+          </button>
 
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="Logo" />
-      </a>
+          <ul id="primary-navigation" class="nav-links">
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="about.html">SOBRE</a></li>
+            <li><a href="projects.html">PROJETOS</a></li>
+            <li><a href="contact.html">CONTATO</a></li>
+          </ul>
 
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-
-      <ul id="primary-navigation" class="nav-links">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="about.html">SOBRE</a></li>
-        <li><a href="projects.html">PROJETOS</a></li>
-        <li><a href="contact.html">CONTATO</a></li>
-      </ul>
-
-      <a href="contact.html" class="btn-contact">Entre em contato</a>
-    </div>
-  </nav>
-
-  <main>
-    <section class="projects" id="projetos">
-      <div class="container">
-        <h1 class="projects-title">Projetos</h1>
-
-        <div class="projects-grid">
-          <!-- Projeto 1 -->
-          <article class="project-card" data-live="https://pedrojuan.dev"
-            data-repo="https://github.com/PedroJuanOfc/portfolio_dev" data-video="">
-            <div class="card-media">
-              <img src="assets/projects/project1.png" alt="Screenshot do Projeto 1">
-            </div>
-
-            <div class="card-content">
-              <h3 class="card-title">Meu portfólio</h3>
-              <p class="card-desc">
-                Meu portfólio pessoal desenvolvido em HTML, CSS e JavaScript. Layout responsivo, tema escuro e navegação
-                acessível com páginas de Sobre, Projetos e Contato.
-              </p>
-
-              <ul class="stack-badges">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-
-              <div class="card-actions">
-                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
-                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
-                <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
-              </div>
-            </div>
-
-            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
-          </article>
-
-          <!-- Projeto 2 -->
-          <article class="project-card" data-live="https://pedrojuanofc.github.io/valorant-agents-explorer/"
-            data-repo="https://github.com/PedroJuanOfc/valorant-agents-explorer" data-video="">
-            <div class="card-media">
-              <img src="assets/projects/project2.png" alt="Screenshot do Projeto 2">
-              <span class="soon-badge">Em desenvolvimento</span>
-            </div>
-
-            <div class="card-content">
-              <h3 class="card-title">Valorant Agents Explorer</h3>
-              <p class="card-desc">
-                Aplicação que consome a Valorant-API para listar agentes, armas e mapas. Grids responsivos, lazy loading e conteúdo em pt-BR. Próximo passo: páginas detalhadas por agente.
-              </p>
-
-              <ul class="stack-badges">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>API pública</li>
-              </ul>
-
-              <div class="card-actions">
-                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
-                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
-                <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
-              </div>
-            </div>
-
-            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
-          </article>
-
-
-          <!-- Projeto 3 -->
-          <article class="project-card is-soon" data-live="" data-repo="" data-video="">
-            <div class="card-media">
-              <img src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
-                alt="Prévia do projeto em breve">
-              <span class="soon-badge">Em breve</span>
-            </div>
-
-            <div class="card-content">
-              <h3 class="card-title">Em breve</h3>
-              <p class="card-desc">
-                Projeto em desenvolvimento. Em breve estarão disponíveis demonstração e repositório com todos os
-                detalhes.
-              </p>
-
-              <!-- <ul class="stack-badges">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul> -->
-
-              <div class="card-actions">
-                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
-                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
-                <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a>
-              </div>
-            </div>
-
-            <!-- a capa fica desativada quando não há link primário -->
-            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
-          </article>
-
-          <!-- Projeto 4 -->
-          <article class="project-card is-soon" data-live="" data-repo="" data-video="">
-            <div class="card-media">
-              <img src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
-                alt="Prévia do projeto em breve">
-              <span class="soon-badge">Em breve</span>
-            </div>
-
-            <div class="card-content">
-              <h3 class="card-title">Em breve</h3>
-              <p class="card-desc">
-                Projeto em desenvolvimento. Em breve estarão disponíveis demonstração e repositório com todos os
-                detalhes.
-              </p>
-
-              <!-- <ul class="stack-badges">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul> -->
-
-              <div class="card-actions">
-                <a class="btn btn-sm" data-kind="live" target="_blank" rel="noopener">Ver site</a>
-                <a class="btn btn-sm btn-outline" data-kind="repo" target="_blank" rel="noopener">GitHub</a>
-                <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a>
-              </div>
-            </div>
-
-            <!-- a capa fica desativada quando não há link primário -->
-            <a class="card-cover" target="_blank" rel="noopener" aria-label="Abrir projeto"></a>
-          </article>
+          <a href="contact.html" class="btn-contact">Entre em contato</a>
         </div>
-      </div>
-    </section>
+      </nav>
 
-  </main>
+      <main>
+        <section class="projects" id="projetos">
+          <div class="container">
+            <h1 class="projects-title">Projetos</h1>
 
-  <script src="scripts/active-link.js"></script>
-  <script src="scripts/projects.js"></script>
-  <script src="scripts/nav.js"></script>
-</body>
+            <div class="projects-grid">
+              <!-- Projeto 1 -->
+              <article
+                class="project-card"
+                data-live="https://pedrojuan.dev"
+                data-repo="https://github.com/PedroJuanOfc/portfolio_dev"
+                data-video=""
+              >
+                <div class="card-media">
+                  <img
+                    src="assets/projects/project1.png"
+                    alt="Screenshot do Projeto 1"
+                  />
+                </div>
 
+                <div class="card-content">
+                  <h3 class="card-title">Meu portfólio</h3>
+                  <p class="card-desc">
+                    Meu portfólio pessoal desenvolvido em HTML, CSS e
+                    JavaScript. Layout responsivo, tema escuro e navegação
+                    acessível com páginas de Sobre, Projetos e Contato.
+                  </p>
+
+                  <ul class="stack-badges">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-sm"
+                      data-kind="live"
+                      target="_blank"
+                      rel="noopener"
+                      >Ver site</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline"
+                      data-kind="repo"
+                      target="_blank"
+                      rel="noopener"
+                      >GitHub</a
+                    >
+                    <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
+                  </div>
+                </div>
+
+                <a
+                  class="card-cover"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir projeto"
+                ></a>
+              </article>
+
+              <!-- Projeto 2 -->
+              <article
+                class="project-card"
+                data-live="https://pedrojuanofc.github.io/valorant-agents-explorer/"
+                data-repo="https://github.com/PedroJuanOfc/valorant-agents-explorer"
+                data-video=""
+              >
+                <div class="card-media">
+                  <img
+                    src="assets/projects/project2.png"
+                    alt="Screenshot do Projeto 2"
+                  />
+                  <span class="soon-badge">Em desenvolvimento</span>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Valorant Agents Explorer</h3>
+                  <p class="card-desc">
+                    Aplicação que consome a Valorant-API para listar agentes,
+                    armas e mapas. Grids responsivos, lazy loading e conteúdo em
+                    pt-BR. Próximo passo: páginas detalhadas por agente.
+                  </p>
+
+                  <ul class="stack-badges">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>API pública</li>
+                  </ul>
+
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-sm"
+                      data-kind="live"
+                      target="_blank"
+                      rel="noopener"
+                      >Ver site</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline"
+                      data-kind="repo"
+                      target="_blank"
+                      rel="noopener"
+                      >GitHub</a
+                    >
+                    <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
+                  </div>
+                </div>
+
+                <a
+                  class="card-cover"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir projeto"
+                ></a>
+              </article>
+
+              <!-- Projeto 3 -->
+              <article
+                class="project-card"
+                data-live="https://pedrojuanofc.github.io/zingen-karaoke/"
+                data-repo="https://github.com/PedroJuanOfc/zingen-karaoke"
+              >
+                <div class="card-media">
+                  <img
+                    src="assets/projects/project3.png"
+                    alt="Screenshot do Projeto 3"
+                  />
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Zingen - Karaokê</h3>
+                  <p class="card-desc">
+                    Landing-page do app Zingen Karaokê. Feita utilizando apenas
+                    HTML e CSS, mantendo a responsividade. Todos os fundamentos
+                    de HTML e CSS foram abordados e aplicados.
+                  </p>
+
+                  <ul class="stack-badges">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-sm"
+                      data-kind="live"
+                      target="_blank"
+                      rel="noopener"
+                      >Ver site</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline"
+                      data-kind="repo"
+                      target="_blank"
+                      rel="noopener"
+                      >GitHub</a
+                    >
+                    <!-- <a class="btn btn-sm btn-outline" data-kind="video" target="_blank" rel="noopener">Vídeo</a> -->
+                  </div>
+                </div>
+
+                <a
+                  class="card-cover"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir projeto"
+                ></a>
+              </article>
+
+              <!-- Projeto 4 -->
+              <article
+                class="project-card is-soon"
+                data-live=""
+                data-repo=""
+                data-video=""
+              >
+                <div class="card-media">
+                  <img
+                    src="https://placehold.co/800x450?text=EM+BREVE&font=source-sans-pro&font_size=48"
+                    alt="Prévia do projeto em breve"
+                  />
+                  <span class="soon-badge">Em breve</span>
+                </div>
+
+                <div class="card-content">
+                  <h3 class="card-title">Em breve</h3>
+                  <p class="card-desc">
+                    Projeto em desenvolvimento. Em breve estarão disponíveis
+                    demonstração e repositório com todos os detalhes.
+                  </p>
+
+                  <!-- <ul class="stack-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul> -->
+
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-sm"
+                      data-kind="live"
+                      target="_blank"
+                      rel="noopener"
+                      >Ver site</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline"
+                      data-kind="repo"
+                      target="_blank"
+                      rel="noopener"
+                      >GitHub</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline"
+                      data-kind="video"
+                      target="_blank"
+                      rel="noopener"
+                      >Vídeo</a
+                    >
+                  </div>
+                </div>
+
+                <!-- a capa fica desativada quando não há link primário -->
+                <a
+                  class="card-cover"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir projeto"
+                ></a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <script src="scripts/active-link.js"></script>
+      <script src="scripts/projects.js"></script>
+      <script src="scripts/nav.js"></script>
+    </body>
+  </html>
 </html>
